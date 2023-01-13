@@ -1,0 +1,23 @@
+.about-me-wrapper {
+    background-color: #404A4A;
+    color: #fff;
+    padding: 20px;
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-text {
+    max-width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.about-img {
+    max-width: 40%;
+    min-width: 400px;
+    object-fit: cover;
+}
