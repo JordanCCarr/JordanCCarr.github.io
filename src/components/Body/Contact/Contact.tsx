@@ -8,7 +8,7 @@ interface ContactProps {
 const Contact = ({displayEngText}: ContactProps) => {
     return (
         <div className="contact-banner">
-            {displayEngText ? 'Interested in hiring me? Here\'s my contact information' : '私を雇う興味がありますか。連絡インフォメーションは'}
+            {displayEngText ? 'Interested in working with me? Here\'s my contact information' : '私を雇う興味がありますか。連絡インフォメーションは'}
             <div className="contact-info">
                 {displayEngText ? 'Phone Number' : '電話番号'}: 412-848-0447
             </div>
