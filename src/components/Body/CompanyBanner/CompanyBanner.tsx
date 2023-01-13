@@ -3,7 +3,11 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useOnScreen } from '../../../util/useOnScreen';
 import './CompanyBanner.css';
 
-const CompanyBanner = () => {
+interface CompanyBannerProps {
+    displayEngText: boolean;
+}
+
+const CompanyBanner = ({displayEngText}:CompanyBannerProps) => {
     const logoRef = useRef() as React.MutableRefObject<HTMLImageElement>;
     const bannerRef = useRef() as React.MutableRefObject<HTMLDivElement>;
     const techRef = useRef() as React.MutableRefObject<HTMLDivElement>;
@@ -28,7 +32,7 @@ const CompanyBanner = () => {
     });
     return (
         <div className="company-banner-wrapper">
-            Where I've worked
+            {displayEngText ? 'Where I\'ve worked' : '働いた会社'}
             <div className="company-banner" ref={bannerRef}>
                 <div className="company-logo">
                     <img
@@ -45,7 +49,7 @@ const CompanyBanner = () => {
                     />
                 </div>
             </div>
-            What I've worked with
+            {displayEngText ? 'What I\'ve worked with' : '使ったプログラミング言語とライブラリ'}
             <div className="tech-wrapper" ref={techRef}>
                 {logoDivs}
             </div>

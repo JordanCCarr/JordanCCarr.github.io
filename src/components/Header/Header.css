@@ -16,3 +16,17 @@
     flex-direction: row;
     align-items: center;
 }
+
+.lang-change {
+    font-size: 28px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 1s;
+    height: fit-content;
+}
+
+.lang-change:hover {
+    transition: 1s;
+    font-weight: 700;
+    font-size: 30px;
+}
